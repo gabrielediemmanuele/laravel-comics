@@ -28,3 +28,7 @@ Route::get('/comics', function () {
     /*lo ritorno col compact  */
     return view('comics', compact('products'));
 })->name('comics');
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
