@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <h1>ciao!</h1>
+  <h1 class="text-danger">ciao!</h1>
 </body>
 
 </html>
