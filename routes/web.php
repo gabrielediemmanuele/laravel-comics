@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    /* mi collego all'array in config comics.php */
+    $products = config('comics.products');
+    /* dd($comics); controllo l'array in arrivo <3 */
+    /*lo ritorno col compact  */
+    return view('home', compact('products'));
 })->name('home');
+
+Route::get('/comics', function () {
+    /* mi collego all'array in config comics.php */
+    $products = config('comics.products');
+    /* dd($comics); controllo l'array in arrivo <3 */
+    /*lo ritorno col compact  */
+    return view('comics', compact('products'));
+})->name('comics');

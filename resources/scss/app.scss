@@ -1,1 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
+
+.card-body {
+    .card-text {
+        font-size: 10px;
+        overflow-y: scroll;
+        height: 200px;
+    }
+}
+
+.card-body {
+    img {
+        width: 100px;
+    }
+}
